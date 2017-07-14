@@ -7,10 +7,13 @@ package com.javarush.task.task03.task0308;
 public class Solution {
     public static void main(String[] args) {
         //напишите тут ваш код
-        int r = 1;
-        for (int i=1; i<10; i++)
-            r = r * i;
-        System.out.println(r);
+        int i = 1;     // вводим
+        int a = 1;    // две переменные
+        while (i < 11){   // создаем цикл, чтобы он выполнялся от 1 до 10 включительно.
+            a = a * i;        // Собственно, выражение, которое будет умножать наше число на следующее
+            i++;          // от 1 до 10, и каждый раз присваивать ему значение от произведения
+        }
+        System.out.println(a);   //вывод переменной
 
 
 
