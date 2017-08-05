@@ -19,11 +19,22 @@ public class Solution {
 
     public static int getMinimum(List<Integer> array) {
         // find minimum here — найти минимум тут
-        return 0;
+        int min = Integer.MAX_VALUE;
+        for (int i = 0; i < array.size(); i++) {
+            if (array.get(i)<min)
+                min = array.get(i);
+        }
+        return min;
     }
 
     public static List<Integer> getIntegerList() throws IOException {
         //create and initialize a list here - создать и заполнить список тут
-        return null;
+        List<Integer> list = new ArrayList<>();
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int n = Integer.parseInt(br.readLine());
+        for (int i = 0; i < n; i++) {
+            list.add(Integer.parseInt(br.readLine()));
+        }
+        return list;
     }
 }
