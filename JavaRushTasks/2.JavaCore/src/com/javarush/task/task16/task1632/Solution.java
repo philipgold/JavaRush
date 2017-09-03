@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Solution {
-    public static List<Thread> threads = new ArrayList<>(5);
+    public static List<Thread> threads = new ArrayList(5);
     static{
         threads.add(new myThread1());
         threads.add(new myThread2());

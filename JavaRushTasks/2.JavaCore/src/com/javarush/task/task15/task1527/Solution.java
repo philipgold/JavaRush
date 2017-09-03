@@ -44,7 +44,7 @@ public class Solution {
     }
 
     public static Map<String, String> splitQuery(String sURL) throws UnsupportedEncodingException, MalformedURLException {
-        Map<String, String> query_pairs = new LinkedHashMap<>();
+        Map<String, String> query_pairs = new LinkedHashMap();
         URL url = new URL(sURL);
         String query = url.getQuery();
         String[] pairs = query.split("&");

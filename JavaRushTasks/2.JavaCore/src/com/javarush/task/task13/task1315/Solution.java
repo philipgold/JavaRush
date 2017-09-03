@@ -30,7 +30,7 @@ public class Solution {
         private ArrayList<Integer> list;
 
         MyClass(){
-            list = new ArrayList<>();
+            list = new ArrayList();
         }
         public void write(int data){
             list.add(data);

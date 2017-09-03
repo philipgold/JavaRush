@@ -20,7 +20,7 @@ public class Solution {
             String fname = br.readLine();
             //String fname = "c://my-object-data.txt";
             br = new BufferedReader(new InputStreamReader(new FileInputStream(fname)));
-            ArrayList<Integer> list = new ArrayList<>();
+            ArrayList<Integer> list = new ArrayList();
 
             while (br.ready()) {
                 int i = Integer.parseInt(br.readLine());
