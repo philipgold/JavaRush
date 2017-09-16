@@ -1,6 +1,5 @@
 package com.javarush.task.task17.task1710;
 
-import org.apache.commons.cli.*;
 
 import javax.swing.text.DateFormatter;
 import java.text.DateFormat;
@@ -47,7 +46,7 @@ public class Solution {
     private static void parcelArguments(String[] args) {
         try{
             if (args.length == 0)
-                throw new MissingArgumentException("There is no arguments");
+                throw new IllegalArgumentException("There is no arguments");
 
             String action = args[0];
 
@@ -75,7 +74,7 @@ public class Solution {
 
 
 
-        }catch (MissingArgumentException e) {
+        }catch (IllegalArgumentException e) {
             e.printStackTrace();
         } catch (ParseException e) {
             e.printStackTrace();

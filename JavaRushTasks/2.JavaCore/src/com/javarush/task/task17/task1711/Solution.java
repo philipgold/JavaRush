@@ -1,6 +1,6 @@
 package com.javarush.task.task17.task1711;
 
-import org.apache.commons.cli.MissingArgumentException;
+
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -72,8 +72,8 @@ public class Solution {
     private static void checkArguments(String[] args) {
         try{
             if (args.length ==0)
-                throw new MissingArgumentException("There are no arguments");
-        } catch (MissingArgumentException e) {
+                throw new IllegalArgumentException("There are no arguments");
+        } catch (IllegalArgumentException e) {
             e.printStackTrace();
         }
     }
