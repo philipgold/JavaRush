@@ -16,14 +16,12 @@ public class Solution {
         print(solution.getLocations());
     }
     public List<User> getUsers(){
-        return new AbstractDbSelectExecutor<User>(){
-
-
-            @Override
-            public String getQuery() {
-                return null;
-            }
-        };
+       return new AbstractDbSelectExecutor<User>(){
+           @Override
+           public String getQuery() {
+               return "SELECT * FROM USER";
+           }
+       }.execute();
     }
 
     public List<Location> getLocations(){
@@ -31,9 +29,33 @@ public class Solution {
 
             @Override
             public String getQuery() {
-                return null;
+                return "SELECT * FROM LOCATION";
             }
-        };
+        }.execute();
+    }
+
+    public List<Server> getServers(){
+        return new AbstractDbSelectExecutor<Server>(){
+            @Override
+            public String getQuery() {
+                return "SELECT * FROM SERVER";
+            }
+        }.execute();
+    }
+    public List<Subject> getSubjects(){
+        return new AbstractDbSelectExecutor<Subject>(){
+            @Override
+            public String getQuery() {
+                return "SELECT * FROM SUBJECT";            }
+        }.execute();
+    }
+    public List<Subscription> getSubscriptions(){
+        return new AbstractDbSelectExecutor<Subscription>(){
+            @Override
+            public String getQuery() {
+                return "SELECT * FROM SUBSCRIPTION";
+            }
+        }.execute();
     }
 
     public static void print(List list) {
