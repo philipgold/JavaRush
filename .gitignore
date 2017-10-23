@@ -23,7 +23,8 @@ hs_err_pid*
 
 
 
-JavaRushTasks/.idea/
-JavaRushTasks/out/
+/.idea/
+/out/
 *.properties
 *.png
+*.info
