@@ -1,7 +1,5 @@
 package com.javarush.task.task29.task2909.user;
 
-import com.google.common.util.concurrent.AtomicDouble;
-
 import java.util.concurrent.atomic.AtomicInteger;
 
 
