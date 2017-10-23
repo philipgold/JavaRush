@@ -1,4 +1,7 @@
 package com.javarush.task.task27.task2712.statistic.event;
 
-public class EventType {
+public enum EventType {
+    COOKED_ORDER,
+    SELECTED_VIDEOS,
+    NO_AVAILABLE_VIDEO;
 }
