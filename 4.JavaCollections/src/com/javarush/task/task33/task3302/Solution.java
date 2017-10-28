@@ -10,6 +10,10 @@ import java.io.StringWriter;
 
 /* 
 Вторая сериализация в JSON
+НЕОБХОДИМО: подключенные библиотеки Jackson Core, Bind и Annotation версии 2.6.1
+
+Расставь JSON аннотации так, чтобы результат работы метода main был следующим
+{"wildAnimal":"Murka","over":3}
 */
 public class Solution {
     public static void main(String[] args) throws IOException {
@@ -30,10 +34,13 @@ public class Solution {
 
     @JsonAutoDetect
     public static class Cat {
+        @JsonProperty(value="wildAnimal")
         public String name;
 
+        @JsonIgnore
         public int age;
 
+        @JsonProperty(value="over")
         public int weight;
 
         Cat() {
