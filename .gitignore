@@ -28,3 +28,4 @@ hs_err_pid*
 *.properties
 *.png
 *.info
+!/4.JavaCollections/src/com/javarush/task/task34/task3409/log4j.properties
